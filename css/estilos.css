@@ -1,0 +1,217 @@
+html {
+	scroll-behavior: smooth;
+}
+
+.container,
+.container-fluid,
+.card,
+header {
+	margin-bottom: 20px !important;
+}
+
+.contenedor-destacados .col-sm-6 {
+	background: #c8c8c8;
+	border: 1px solid #000;
+	text-align: center;
+	padding: 10px;
+}
+
+.contenedor-historias .col-sm-3,
+.contenedor-historias .col-sm-9 {
+
+	text-align: center;
+	padding: 10px;
+}
+
+.contenedor-historias .col-sm-3 > p,
+.contenedor-historias .col-sm-9 > p {
+	text-align: justify;
+}
+
+.contenedor-materiales .col-sm-3 {
+	background: #c8c8c8;
+	padding: 10px;
+	text-align: center;
+	border: 1px solid #000;
+}
+
+.slide-frontpage {
+	width: 100%;
+	height: 400px;
+	background: #c8c8c8;
+	text-align: center;
+}
+
+.contenedor-mapa .col-sm-12 {
+	width: 100%;
+	height: 400px; 
+	background: #c8c8c8;
+	text-align: center;
+}
+
+.contenedor-patrocinadores .col-sm-2 {
+	background: #c8c8c8;
+	padding: 10px;
+	text-align: center;
+	border: 1px solid #000;
+}
+
+.logo-hamb {
+	display:none;
+}
+
+.logo-hamb img {
+	width: 64px;
+	float:left;
+}
+
+.contenedor-header {
+	display:inherit;
+}
+
+.contenedor-header .user >ul {
+	list-style: none;
+}
+
+.contenedor-header .user > ul > li {
+	float: right;
+	padding: 10px;
+}
+
+.navbar {
+	min-height: unset;
+	margin-bottom: 0px;
+}
+
+.nav > li > a {
+	float: left;
+	padding: 15px;
+}
+
+.nav > li > a.active {
+	background: #905800;
+	color: #fff;
+}
+
+.contenedor-footer {
+	background: #c8c8c8;
+	margin-bottom: 0px !important;
+}
+
+.contenedor-footer > div.row {
+	padding: 10px;
+}
+
+.contenedor-footer .menu-footer > ul {
+	list-style: none;
+	text-align: left;
+	padding-left: 0px;
+}
+
+.rrss ul {
+	list-style: none;
+}
+
+.rrss ul > li {
+	float: left;
+	padding: 10px;
+}
+
+
+.rrss img {
+	width: 64px;
+}
+
+.contenedor-alojamientos p,
+.contenedor-servicios p,
+.contenedor-nosotros p,
+.contenedor-contacto p {
+	text-align: justify;
+}
+
+.servicios-alojamiento {
+	list-style: none;
+}
+
+.servicios-alojamiento > li {
+	float: left;
+	padding: 10px;
+}
+
+.servicios-alojamiento > li > img {
+	width: 48px;
+}
+
+.menu-footer > ul > li > a.active {
+	color: #000;
+}
+
+#btntop {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	font-size: 30px;
+	border: none;
+	outline: none;
+	background-color: #c8c8c8;
+	color: white;
+	cursor: pointer;
+	padding: 8px;
+	border-radius: 25px;
+	width: 50px;
+	height: 50px;
+	border: 2px solid #000;
+}
+
+#btntop:hover {
+  background-color: #555;
+}
+
+.img-listado {
+	width: 48px;
+}
+
+@media (max-width: 767px) {
+	.slide-frontpage {
+		height: 280px;
+	}
+	.contenedor-mapa .col-sm-12 {
+		height: 280px; 
+	}
+	.nav > li > a {
+		float: none;
+		padding: 5px;
+	}
+	.logo-hamb {
+		display:inherit;
+	}
+	.logo-header {
+		display:none;
+	}
+	.menu-footer {
+		display:none;	
+	}
+	.rrss img {
+		width: 40px;
+	}
+}
+
+.contenedor-menuAlojamientos img:hover{
+	 
+	background: rgba(0, 0, 0, 0.5);  
+}
+
+.contenedor-menuAlojamientos{
+	border: 2px solid black;
+}
+
+.contenedor-Npersonas{
+	border: 2px solid black;
+	margin-top: 100px;
+}
+
+.nPersonas{
+	margin-top: 100px;
+}

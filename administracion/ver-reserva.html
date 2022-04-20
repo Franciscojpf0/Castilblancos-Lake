@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="favicon.ico">
+		<title>Castilblanco's Lake</title>
+		<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.css" media="all" />
+		<link rel="stylesheet" href="../css/estilos.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.4/summernote.css" rel="stylesheet">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.4/summernote.js"></script>
+	</head>
+
+	<body>
+		<div class="container-fluid contenedor-header">
+			<div class="row">
+				<div class="col-sm-6 logo-header">
+					<a href="../index.html">
+						<img class="img-responsive" src="../imagenes/logo_castilblancoslake.png">
+					</a>
+				</div>
+				<div class="col-sm-6 user">
+				</div>
+			</div>
+		</div>
+
+		<header id="navbar" role="banner" class="navbar navbar-default fluid-container">
+			<div class="fluid-container">
+				<div class="navbar-header">
+					<div class="logo-hamb">
+						<a href="../index.html">
+							<img src="../imagenes/logo_castilblancoslake.png">
+						</a>
+					</div>
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+ 						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<div class="navbar-collapse collapse" id="navbar-collapse">
+					<nav class="navbar" role="navigation">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="leaf">
+								<a class="nav-link " href="menu-admin.html">
+							  		<span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Administración
+							  	</a>
+							</li>
+							<li class="leaf">
+								<a class="nav-link" href="mi-cuenta.html">
+									<span class="glyphicon glyphicon-user" aria-hidden="true"></span> Mi cuenta
+								</a>
+							</li>
+							<li class="leaf">
+		 						<a class="nav-link"  href="../index.html">
+		 							<span class="glyphicon glyphicon-off" aria-hidden="true"></span> Logout
+		 						</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+
+		<div class="container contenedor-admin">
+			<h1>ADMINISTRACIÓN DE RESERVAS - VER</h1>
+
+		<form class="form-horizontal" action="admin-contactos.html">
+			<fieldset>
+				<div class="form-group">
+				<label class="col-md-2 control-label" for="nombre">ID RESERVA</label>  
+					<div class="col-md-10">
+				  		<input id="id-reserva" name="id-reserva" type="text" class="form-control input-md" value="1078">
+					</div>
+				</div>
+				<div class="form-group">
+				<label class="col-md-2 control-label" for="nombre">Usuario</label>  
+					<div class="col-md-10">
+				  		<input id="usuario" name="usuario" type="text" placeholder="Usuario" class="form-control input-md" value="Usuario 43">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label class="col-md-2 control-label" for="alojamiento">Alojamiento</label>  
+					<div class="col-md-10">
+						<input id="alojamiento" name="alojamiento" type="text" placeholder="alojamiento" class="form-control input-md" value="Alojamiento 1">
+					</div>
+				</div>
+				
+				<div class="form-group"> <!-- Date input -->
+					<label class="col-md-2 control-label" for="fecha-entrada">Fecha entrada</label>
+					<div class="col-md-10">
+						<input class="form-control" id="fecha-entrada" name="fecha-entrada" placeholder="DD/MM/YYYY" type="text" value="21/07/2022"/>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label class="col-md-2 control-label" for="dias">Número de días</label>  
+					<div class="col-md-10">
+						<input id="dias" name="dias" type="text" placeholder="dias" class="form-control input-md" value="3">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label class="col-md-2 control-label" for="pax">Número de personas</label>  
+					<div class="col-md-10">
+						<input id="pax" name="pax" type="text" placeholder="Número de personas" class="form-control input-md" value="4">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label class="col-md-2 control-label" for="total">Precio total</label>  
+					<div class="col-md-10">
+						<input id="total" name="total" type="text" placeholder="Precio total" class="form-control input-md" value="895€">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label class="col-md-2 control-label" for="estado-reserva">Estado reserva</label>
+					<div class="col-md-10">
+						<div class="checkbox">
+							<label for="checkboxes-0">
+								<input type="checkbox" name="estado-reserva" id="estado-reserva" value="1" checked>
+								Pagado
+							</label>
+						</div>
+					</div>
+				</div>
+				
+				<div class="form-group">
+				<label class="col-md-2 control-label" for="fecha-pago">Fecha pago</label>  
+					<div class="col-md-10">
+				  		<input id="fecha-pago" name="fecha-pago" type="text" class="form-control input-md" value="10/03/2022 18:32:16">
+					</div>
+				</div>
+				
+				<div class="form-group">
+				<label class="col-md-2 control-label" for="cod-auth">Código Autorización</label>  
+					<div class="col-md-10">
+				  		<input id="cod-auth" name="cod-auth" type="text" class="form-control input-md" value="547481">
+					</div>
+				</div>
+				
+				
+				<div class="form-group">
+					<label class="col-md-2 control-label" for="body">Observaciones</label>
+					<div class="col-md-10">                     
+						<textarea class="form-control" id="body" rows="10" name="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in condimentum nunc, eget auctor erat.</textarea>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="guardar"></label>
+					<div class="col-md-8">
+						<button id="guardar" name="guardar" class="btn btn-success">Guardar</button>
+						<a href="admin-reservas.html" id="volver" name="volver" class="btn btn-warning">Volver</a>
+					</div>
+				</div>
+				
+			</fieldset>
+		</form>
+
+		</div>
+		
+		<footer class="footer container-fluid contenedor-footer">
+			<p style="text-align: center;">© Castilblanco's Lake 2022</p>
+		</footer>
+		<script>
+			$(document).ready(function() {
+				$('#body').summernote({height: 400});
+			});
+		</script>
+<script>
+    $(document).ready(function(){
+        var date_input=$('input[name="fecha-entrada"]'); //our date input has the name "date"
+        var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+        date_input.datepicker({
+            format: 'dd/mm/yyyy',
+            container: container,
+            todayHighlight: true,
+            autoclose: true,
+        })
+    })
+</script>
+	</body>
+</html>
+		

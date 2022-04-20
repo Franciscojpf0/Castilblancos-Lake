@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="favicon.ico">
+		<title>Castilblanco's Lake</title>
+		<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.css" media="all" />
+		<link rel="stylesheet" href="../css/estilos.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.js"></script>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.4/summernote.css" rel="stylesheet">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.4/summernote.js"></script>
+	</head>
+
+	<body>
+		<div class="container-fluid contenedor-header">
+			<div class="row">
+				<div class="col-sm-6 logo-header">
+					<a href="../index.html">
+						<img class="img-responsive" src="../imagenes/logo_castilblancoslake.png">
+					</a>
+				</div>
+				<div class="col-sm-6 user">
+				</div>
+			</div>
+		</div>
+
+		<header id="navbar" role="banner" class="navbar navbar-default fluid-container">
+			<div class="fluid-container">
+				<div class="navbar-header">
+					<div class="logo-hamb">
+						<a href="../index.html">
+							<img src="../imagenes/logo_castilblancoslake.png">
+						</a>
+					</div>
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+ 						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<div class="navbar-collapse collapse" id="navbar-collapse">
+					<nav class="navbar" role="navigation">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="leaf">
+								<a class="nav-link " href="menu-admin.html">
+							  		<span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Administración
+							  	</a>
+							</li>
+							<li class="leaf">
+								<a class="nav-link" href="mi-cuenta.html">
+									<span class="glyphicon glyphicon-user" aria-hidden="true"></span> Mi cuenta
+								</a>
+							</li>
+							<li class="leaf">
+		 						<a class="nav-link"  href="../index.html">
+		 							<span class="glyphicon glyphicon-off" aria-hidden="true"></span> Logout
+		 						</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+
+		<div class="container contenedor-noticias">
+			<h1>ADMINISTRACIÓN DE EQUIPAMIENTO - EDITAR</h1>
+
+			<form class="form-horizontal" action="admin-equipamiento.html">
+				<fieldset>
+					<div class="form-group">
+						<label class="col-md-2 control-label" for="title">Nombre</label>  
+						<div class="col-md-10">
+							<input id="title" name="title" type="text" placeholder="Nombre" class="form-control input-md" value="Equipamiento 1">
+						</div>
+					</div>
+			
+					<div class="form-group">
+						<label class="col-md-2 control-label" for="body">Descripción</label>
+						<div class="col-md-10">                     
+							<textarea class="form-control" id="body" rows="30" name="body">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ligula velit, pulvinar eu vestibulum sed, pellentesque eget magna. Vestibulum ornare quam mi, tristique faucibus libero bibendum eu. Etiam sagittis tortor at risus iaculis rutrum. Nulla pulvinar libero molestie lobortis pulvinar. Sed ac condimentum arcu. Cras pretium felis at est porttitor facilisis. Nullam sit amet cursus tellus, ut sagittis metus. Curabitur orci enim, maximus at dui at, commodo egestas metus.
+			
+			Donec imperdiet tortor a scelerisque fermentum. Proin eu leo nisi. Fusce condimentum diam non ligula semper, vel pretium risus tincidunt. Vestibulum rhoncus tortor ac nulla scelerisque euismod. Ut eleifend augue eros, tempus fringilla quam ullamcorper vel. Integer nisl est, ornare id sollicitudin in, consequat sit amet augue. Aenean sodales dignissim eros, ac gravida velit vulputate a. Sed massa leo, suscipit non mauris a, malesuada accumsan tellus. Quisque viverra congue dictum. Maecenas mauris nunc, luctus nec libero eu, viverra posuere nisl.
+			
+			Sed semper a ante non pretium. Quisque non turpis ante. Duis convallis erat at hendrerit finibus. In hac habitasse platea dictumst. In porttitor elit a libero viverra, a fermentum massa aliquam. Donec ornare sit amet tellus nec lacinia. Fusce fringilla erat nec aliquet tempor. Nulla nec eros ac eros varius congue. Morbi ultricies porta tellus, auctor aliquet urna blandit vitae. Cras sed nunc sit amet dui condimentum vehicula eget nec nunc. Curabitur vitae neque ut erat malesuada laoreet.
+			
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ligula velit, pulvinar eu vestibulum sed, pellentesque eget magna. Vestibulum ornare quam mi, tristique faucibus libero bibendum eu. Etiam sagittis tortor at risus iaculis rutrum. Nulla pulvinar libero molestie lobortis pulvinar. Sed ac condimentum arcu. Cras pretium felis at est porttitor facilisis. Nullam sit amet cursus tellus, ut sagittis metus. Curabitur orci enim, maximus at dui at, commodo egestas metus.
+			
+			Donec imperdiet tortor a scelerisque fermentum. Proin eu leo nisi. Fusce condimentum diam non ligula semper, vel pretium risus tincidunt. Vestibulum rhoncus tortor ac nulla scelerisque euismod. Ut eleifend augue eros, tempus fringilla quam ullamcorper vel. Integer nisl est, ornare id sollicitudin in, consequat sit amet augue. Aenean sodales dignissim eros, ac gravida velit vulputate a. Sed massa leo, suscipit non mauris a, malesuada accumsan tellus. Quisque viverra congue dictum. Maecenas mauris nunc, luctus nec libero eu, viverra posuere nisl.
+			
+			Sed semper a ante non pretium. Quisque non turpis ante. Duis convallis erat at hendrerit finibus. In hac habitasse platea dictumst. In porttitor elit a libero viverra, a fermentum massa aliquam. Donec ornare sit amet tellus nec lacinia. Fusce fringilla erat nec aliquet tempor. Nulla nec eros ac eros varius congue. Morbi ultricies porta tellus, auctor aliquet urna blandit vitae. Cras sed nunc sit amet dui condimentum vehicula eget nec nunc. Curabitur vitae neque ut erat malesuada laoreet.    
+							</textarea>
+						</div>
+					</div>
+			
+					<div class="form-group">
+						<label class="col-md-2 control-label" for="imagenes">Imágenes</label>
+						<div class="col-md-10">
+							<input id="imagenes" name="imagenes" class="input-file" type="file">
+						</div>
+					</div>
+			
+					<div class="form-group">
+						<label class="col-md-2 control-label" for="precio">Precio €</label>  
+						<div class="col-md-10">
+							<input id="precio" name="precio" type="text" placeholder="Precio" class="form-control input-md" value="67.00">
+						</div>
+					</div>
+			
+					<div class="form-group">
+						<label class="col-md-4 control-label" for="guardar"></label>
+						<div class="col-md-8">
+							<button id="guardar" name="guardar" class="btn btn-success">Guardar</button>
+							<a href="admin-equipamiento.html" id="cancelar" name="cancelar" class="btn btn-warning">Cancelar</a>
+						</div>
+					</div>
+				</fieldset>
+			</form>
+
+		</div>
+		
+		<footer class="footer container-fluid contenedor-footer">
+			<p style="text-align: center;">© Castilblanco's Lake 2022</p>
+		</footer>
+		<script>
+			$(document).ready(function() {
+				$('#body').summernote({height: 400});
+			});
+		</script>
+	</body>
+</html>
+		
